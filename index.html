@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Staff</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        form {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+        h2, h3 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form id="staffForm">
+        <h2>Formulaire de Candidature Staff</h2>
+
+        <!-- Infos générales -->
+        <h3>Informations Générales</h3>
+        <label for="pseudo">Pseudo (en jeu)</label>
+        <input type="text" id="pseudo" name="pseudo" required>
+
+        <label for="age">Âge IRL</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="availability">Disponibilités hebdomadaires</label>
+        <textarea id="availability" name="availability" rows="4" required placeholder="Indiquez vos jours et heures de connexion (approximatives)."></textarea>
+
+        <!-- Expérience -->
+        <h3>Expérience</h3>
+        <label for="rp_experience">Expérience RP</label>
+        <textarea id="rp_experience" name="rp_experience" rows="4" required placeholder="Depuis combien de temps pratiquez-vous le RP ? Avez-vous déjà été staff sur d'autres serveurs ?"></textarea>
+
+        <label for="moderation_experience">Expérience en gestion ou modération</label>
+        <textarea id="moderation_experience" name="moderation_experience" rows="4" required></textarea>
+
+        <label for="technical_skills">Compétences techniques (optionnel)</label>
+        <textarea id="technical_skills" name="technical_skills" rows="4" placeholder="Outils comme Discord, plugins serveur, etc."></textarea>
+
+        <!-- Motivations -->
+        <h3>Motivations</h3>
+        <label for="motivation">Pourquoi souhaitez-vous rejoindre le staff ?</label>
+        <textarea id="motivation" name="motivation" rows="4" required></textarea>
+
+        <label for="vision">Quelle est votre vision du rôle du staff dans un serveur RP ?</label>
+        <textarea id="vision" name="vision" rows="4" required></textarea>
+
+        <label for="staff_contribution">Décrivez comment le staff contribue à la qualité du jeu</label>
+        <textarea id="staff_contribution" name="staff_contribution" rows="4" required></textarea>
+
+        <label for="objectives">Quels sont vos objectifs en tant que membre du staff ?</label>
+        <textarea id="objectives" name="objectives" rows="4" required></textarea>
+
+        <!-- Gestion de conflits -->
+        <h3>Gestion de Conflits</h3>
+        <label for="rule_violation">Comment géreriez-vous un joueur enfreignant les règles ?</label>
+        <textarea id="rule_violation" name="rule_violation" rows="4" required></textarea>
+
+        <label for="dispute_resolution">Comment réagiriez-vous face à une dispute entre deux joueurs ?</label>
+        <textarea id="dispute_resolution" name="dispute_resolution" rows="4" required></textarea>
+
+        <label for="conflict_resolution">Décrivez votre méthode pour résoudre un conflit de manière impartiale</label>
+        <textarea id="conflict_resolution" name="conflict_resolution" rows="4" required></textarea>
+
+        <!-- Questions supplémentaires -->
+        <h3>Questions Supplémentaires</h3>
+        <label for="teamwork">Êtes-vous à l’aise pour travailler en équipe ?</label>
+        <textarea id="teamwork" name="teamwork" rows="4" required></textarea>
+
+        <label for="collaboration">Expliquez vos capacités à collaborer avec d'autres membres du staff</label>
+        <textarea id="collaboration" name="collaboration" rows="4" required></textarea>
+
+        <label for="stress_management">Comment vous adaptez-vous à des situations stressantes ?</label>
+        <textarea id="stress_management" name="stress_management" rows="4" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
